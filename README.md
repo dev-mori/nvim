@@ -1,1 +1,2 @@
 # nvim
+locate `~/.config/nvim`
