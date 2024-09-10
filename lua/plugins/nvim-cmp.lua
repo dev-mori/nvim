@@ -1,3 +1,4 @@
-return {
-  { "hrsh/nvim-cmp" },
-}
+-- errorでるため一旦コメントアウト
+-- return {
+--   { "hrsh/nvim-cmp" },
+-- }
