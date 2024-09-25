@@ -5,6 +5,7 @@ opt.expandtab = true
 opt.foldlevel = 99
 opt.ignorecase = true
 opt.list = true -- Show some invisible characters (tabs...
+opt.scroll = 7 -- Jump 7 lines when scrolling
 opt.scrolloff = 10 -- Lines of context
 opt.shiftround = true -- Round indent
 opt.shiftwidth = 2 -- Size of an indent
