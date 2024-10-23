@@ -26,12 +26,13 @@ opt.wildmenu = true
 opt.cursorline = true
 opt.cursorlineopt = "number"
 
-if vim.fn.has("nvim-0.10") == 1 then
-  opt.smoothscroll = true
-  opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
-  opt.foldmethod = "expr"
-  opt.foldtext = ""
-else
-  opt.foldmethod = "indent"
-  opt.foldtext = "v:lua.require'lazyvim.util'.ui.foldtext()"
-end
+-- if vim.fn.has("nvim-0.10") == 1 then
+--   opt.smoothscroll = true
+--   opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
+--   opt.foldmethod = "expr"
+--   opt.foldtext = ""
+-- else
+--   opt.foldmethod = "indent"
+--   opt.foldtext = "v:lua.require'lazyvim.util'.ui.foldtext()"
+-- end
+opt.foldmethod = "syntax"
