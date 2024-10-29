@@ -10,3 +10,4 @@ return {
     })
   end,
 }
+-- :TransparentEnable to enable transparency
