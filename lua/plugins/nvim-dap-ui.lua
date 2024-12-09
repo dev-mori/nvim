@@ -13,4 +13,7 @@ return {
     -- { "<leader>duW", "<cmd>lua require('dapui').workspace_view.workspace()<CR>", desc = "dapui workspace view workspace" },
     -- { "<leader>duR", "<cmd>lua require('dapui').run_last()<CR>", desc = "dapui run last" },
   },
+  config = function()
+    require("dapui").setup()
+  end,
 }
