@@ -25,6 +25,9 @@ opt.winminwidth = 5 -- Minimum window width
 opt.wildmenu = true
 opt.cursorline = true
 opt.cursorlineopt = "number"
+opt.foldmethod = "syntax"
+opt.incsearch = true
+opt.autoread = true
 
 -- if vim.fn.has("nvim-0.10") == 1 then
 --   opt.smoothscroll = true
@@ -35,4 +38,3 @@ opt.cursorlineopt = "number"
 --   opt.foldmethod = "indent"
 --   opt.foldtext = "v:lua.require'lazyvim.util'.ui.foldtext()"
 -- end
-opt.foldmethod = "syntax"
