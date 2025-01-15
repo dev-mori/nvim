@@ -28,8 +28,8 @@ opt.cursorlineopt = "number"
 opt.foldmethod = "syntax"
 opt.incsearch = true
 opt.autoread = true
-opt.number = true -- Show line numbers
-opt.relativenumber = true -- Relative line numbers
+-- opt.number = true -- Show line numbers
+-- opt.relativenumber = true -- Relative line numbers
 
 -- if vim.fn.has("nvim-0.10") == 1 then
 --   opt.smoothscroll = true
