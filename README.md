@@ -12,6 +12,12 @@ brew install neovim
 
 https://qiita.com/dev-mori/items/a6136f0a4004aa94e109
 
+## add alias (optional)
+~/.zshrc or ~/bashrc
+```
+alias n=nvim
+```
+
 ## to enable transparency
 ```
 :TransparentEnable
