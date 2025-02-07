@@ -28,6 +28,7 @@ opt.cursorlineopt = "number"
 opt.foldmethod = "syntax"
 opt.incsearch = true
 opt.autoread = true
+opt.completeopt = "menu,menuone,noselect,noinsert,popup" -- for copilot chat if neovim < 0.11.0
 -- opt.number = true -- Show line numbers
 -- opt.relativenumber = true -- Relative line numbers
 
