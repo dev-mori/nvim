@@ -8,6 +8,11 @@ return {
   build = "make tiktoken",
   opts = {
     debug = true,
+    mappings = {
+      complete = {
+        insert = '',
+      }
+    }
   },
   keys = {
     { "<leader>co", "<cmd>CopilotChatToggle<CR>", desc = "Toggle CopilotChat" },
