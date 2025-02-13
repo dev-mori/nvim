@@ -50,3 +50,8 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit -D -t /usr/local/bin/
 ```
 https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu
+
+## install im-select
+```
+brew install im-select
+```
