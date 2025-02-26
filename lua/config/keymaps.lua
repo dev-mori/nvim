@@ -61,3 +61,14 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
 -- paste without register
 map("x", "p", '"_dP', { desc = "Paste without Register" })
+
+-- quickfix list
+-- map("n", "<leader>cc", ":cclose<CR>", { desc = "Close quickfix list", noremap = true, silent = true })
+map("n", "<leader>cn", ":cnext<CR>", { desc = "Next quickfix item", noremap = true, silent = true })
+map("n", "<leader>cp", ":cprev<CR>", { desc = "Previous quickfix item", noremap = true, silent = true })
+map("n", "<leader>cf", ":cfirst<CR>", { desc = "First quickfix item", noremap = true, silent = true })
+map("n", "<leader>cl", ":clast<CR>", { desc = "Last quickfix item", noremap = true, silent = true })
+map("n", "<leader>cdo", ":cdo ", { desc = "Execute command on each quickfix entry", noremap = true, silent = false })
+map("n", "<leader>cdn", ":cdo normal ", { desc = "Execute command on each quickfix entry", noremap = true, silent = false })
+map("n", "<leader>cfdo", ":cfdo ", { desc = "Execute command on each quickfix file", noremap = true, silent = false })
+map("n", "<leader>cfdn", ":cfdo normal ", { desc = "Execute command on each quickfix file", noremap = true, silent = false })

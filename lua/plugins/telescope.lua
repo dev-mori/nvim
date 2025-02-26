@@ -16,6 +16,7 @@ return {
 
     local custom_actions = {}
 
+    -- telescope multi select to open files in quickfix list
     function custom_actions.fzf_multi_select(prompt_bufnr)
       local function get_table_size(t)
         local count = 0
