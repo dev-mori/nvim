@@ -1,0 +1,5 @@
+https://github.com/anthropics/claude-code
+nodeのインストールとclaude-codeのインストール
+`npm install -g @anthropic-ai/claude-code`
+
+https://github.com/greggh/claude-code.nvim?tab=readme-ov-file
