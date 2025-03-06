@@ -3,3 +3,10 @@ nodeのインストールとclaude-codeのインストール
 `npm install -g @anthropic-ai/claude-code`
 
 https://github.com/greggh/claude-code.nvim?tab=readme-ov-file
+
+claude-codeがmodel変更できないっぽい
+
+claude-codeでもエージェントっぽく行けるかもしれないが、コストが高いので安めでいくなら↓
+cool-clineでsonnet3-haikuを使うのが良さそう
+cool-clineはvscodeの拡張機能なのでvscodeで使う
+https://github.com/yetone/avante.nvimだったらnvimでも使えそうだが、cursorベースっぽいので権限管理周りが冗長な可能性
