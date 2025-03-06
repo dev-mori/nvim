@@ -10,3 +10,6 @@ claude-codeでもエージェントっぽく行けるかもしれないが、コ
 cool-clineでsonnet3-haikuを使うのが良さそう
 cool-clineはvscodeの拡張機能なのでvscodeで使う
 https://github.com/yetone/avante.nvimだったらnvimでも使えそうだが、cursorベースっぽいので権限管理周りが冗長な可能性
+
+haikuはだいぶ安いけど性能が少々心配
+4oが定額で使えるとしたらcopilot agentのほうがいいかもしれない
