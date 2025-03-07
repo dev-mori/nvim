@@ -13,3 +13,6 @@ https://github.com/yetone/avante.nvimだったらnvimでも使えそうだが、
 
 haikuはだいぶ安いけど性能が少々心配
 4oが定額で使えるとしたらcopilot agentのほうがいいかもしれない
+
+copilot agentが定額でsonnet3.7とかも使い放題っぽい（一時的なレートリミットとかはありかもだけど）
+これ最強かもしれない
