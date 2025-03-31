@@ -49,3 +49,13 @@ fields @timestamp, @message
 | limit 50
 
 こんなんとか
+
+
+メモリの使用量を確認する
+# メモリを大量に消費しているプロセスを特定
+ps aux --sort=-%mem | head -10
+# メモリ使用量の推移をリアルタイムで監視
+top -o %MEM
+# プロセスのメモリキャッシュ状況を確認
+free -h
+
