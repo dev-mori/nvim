@@ -20,3 +20,32 @@ copilot agentが定額でsonnet3.7とかも使い放題っぽい（一時的な�
 
 フロントエンドテスト戦略
 テスティングトロフィー
+
+tanstack-query人気すごいな
+
+負荷テストの504の要因は、ターゲットで処理できる量を超えたリクエストが飛んできて、スタックしてる可能性がある
+504 Gateway Timeout → ターゲットがレスポンスを返さなかった
+
+スムーズなスケールアウトのために
+- CPU使用率などの閾値を低めてみる
+- タスク起動の高速化（コンテナイメージの軽量化など）
+- 最小タスクを２以上にしておく
+
+localのlog_levelをinfoにしてタスクのログとおなじになるか確認してみる
+
+cloudwatch logs insightsで、特定のロググループのログを検索する
+
+fields @timestamp, @message
+| filter @message like "ERROR" or @message like "Timeout" or @message like "Memory limit exceeded"
+| sort @timestamp desc
+| limit 100
+
+こんなんとか
+
+fields @timestamp, @message
+| filter @logStream like "my-app"
+| filter @message like "Request timed out"
+| sort @timestamp desc
+| limit 50
+
+こんなんとか
