@@ -103,3 +103,19 @@ VPCがやけにかかっていると思ったけど、多分動画を転送し�
 
 rails version up
 8.0.1 > 7.2.2.1 > 7.1.5.1 > 7.0.8.7
+
+
+https://roadmap.sh/react
+にしたがって技術取り入れていくか
+特に最近UI周り気にされてるから
+- Tailwind (CSS)
+- Shadcn UI (UI)
+- Radix UI (headless UI(behavior only))
+- Framer Motion (animation)
+あたりでコンポーネントをちゃんと作っていくのが良さそう
+
+あと
+- react-query
+- react-hook-form
+- react-router
+とかは積極的に使っていくのが良さそう
