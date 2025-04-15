@@ -120,3 +120,12 @@ https://roadmap.sh/react
 - react-router
 とかは積極的に使っていくのが良さそう
 余裕があれば storybook も入れたい
+
+
+
+
+
+
+
+https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension
+https://zenn.dev/aishift/articles/642583b257bedb
