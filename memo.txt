@@ -129,3 +129,10 @@ https://roadmap.sh/react
 
 https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension
 https://zenn.dev/aishift/articles/642583b257bedb
+
+
+CPM以外のCPC、CPMは分析などが必要になるため、結構大変だし、広告を出す側と出される側どちらも大量に必要
+純広告もしくはCPMならすんなり行けそう
+
+出したいタグはいらなそう
+目標CPAとかになる
