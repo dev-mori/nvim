@@ -3,7 +3,7 @@ return {
   branch = "harpoon2",
   dependencies = { "nvim-lua/plenary.nvim" },
   keys = {
-    { "<leader>a", function() require("harpoon"):list():add() end, desc = "harpoon list add" },
+    { "<C-a>", function() require("harpoon"):list():add() end, desc = "harpoon list add" },
     { "<C-e>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "harpoon toggle menu" },
     { "<leader>ha", function() require("harpoon"):list():select(1) end, desc = "harpoon select 1" },
     { "<leader>hs", function() require("harpoon"):list():select(2) end, desc = "harpoon select 2" },
