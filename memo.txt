@@ -197,7 +197,14 @@ curl https://api.x.ai/v1/chat/completions \
       "content": "Testing. Just say hi and hello world and nothing else."
     }
   ],
-  "model": "grok-3-latest",
+  "model": "grok-3-mini-beta",
   "stream": false,
   "temperature": 0
 }'
+
+
+多分grok単体でも設定できるとは思うんだけど。。。
+https://github.com/yetone/avante.nvim/wiki/Custom-providers
+
+ただ、github copilotでもいける可能性がある
+それなら github copilot + gpt-o4-miniが最強説

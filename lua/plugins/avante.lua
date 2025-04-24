@@ -5,27 +5,30 @@ return {
   opts = {
     -- add any opts here
     -- for example
-    provider = "openai",
-    openai = {
-      endpoint = "https://api.openai.com/v1",
-      model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)
-      timeout = 30000, -- Timeout in milliseconds, increase this for reasoning models
-      temperature = 0,
-      max_completion_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
-      disable_tools = true,
-      --reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
-    },
-    disabled_tools = {
-      "list_files",
-      "search_files",
-      "read_file",
-      "create_file",
-      "rename_file",
-      "delete_file",
-      "create_dir",
-      "rename_dir",
-      "delete_dir",
-      "bash",
+    -- provider = "openai",
+    -- openai = {
+    --   endpoint = "https://api.openai.com/v1",
+    --   model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)
+    --   timeout = 30000, -- Timeout in milliseconds, increase this for reasoning models
+    --   temperature = 0,
+    --   max_completion_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
+    --   disable_tools = true,
+    --   --reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
+    -- },
+    provider = "xai",
+    vendors = {
+      xai = {
+        __inherited_from = "openai",
+        endpoint = "https://api.x.ai/v1",
+        api_key_name = "XAI-API_KEY",
+        model = "grok-3-mini-beta",
+        timeout = 60000,
+        temperature = 0.0,
+        max_completion_tokens = 131072,
+        reasoning = {
+          effort = "high",
+        }
+      },
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
@@ -70,8 +73,19 @@ return {
     },
   },
   config = function()
-    vim.g.mcphub_auto_approve = true
     require("avante").setup({
+      disabled_tools = {
+        "list_files",
+        "search_files",
+        "read_file",
+        "create_file",
+        "rename_file",
+        "delete_file",
+        "create_dir",
+        "rename_dir",
+        "delete_dir",
+        "bash",
+      },
       -- other config
       -- The system_prompt type supports both a string and a function that returns a string. Using a function here allows dynamically updating the prompt with mcphub
       system_prompt = function()
