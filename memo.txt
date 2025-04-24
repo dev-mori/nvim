@@ -203,7 +203,7 @@ curl https://api.x.ai/v1/chat/completions \
 }'
 
 
-多分grok単体でも設定できるとは思うんだけど。。。
+多分grok単体でもopenai互換ぽそうだから設定できるとは思うんだけど。。。
 https://github.com/yetone/avante.nvim/wiki/Custom-providers
 
 ただ、github copilotでもいける可能性がある
