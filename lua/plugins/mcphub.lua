@@ -10,11 +10,12 @@ return {
   -- build = "bundled_build.lua",  -- Use this and set use_bundled_binary = true in opts  (see Advanced configuration)
   config = function()
     require("mcphub").setup({
-      extensions = {
-        avante = {
-          make_slash_commands = true,  -- Enable slash commands
-        }
-      }
+      auto_approve = false,
+      -- extensions = {
+      --   avante = {
+      --     make_slash_commands = true,  -- Enable slash commands
+      --   }
+      -- }
     })
   end,
 }
