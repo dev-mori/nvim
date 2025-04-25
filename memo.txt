@@ -177,34 +177,10 @@ avante.nvim + mcphub.nvim か aider(mcpm-aider) 使ってみたい
 aider良さげな気がするが、mcpが標準搭載されてなくて金かかるから一旦ステイか
 avanteやってみる
 
-grok-3-mini-beta
-
-api key
-xai-LvCplRhE8gMA8swwqO6pSFZXT4wxw4VYWHQwz0FcMI92UxSc3pyZk7LebgGtvC5W45mwlzDqXlIbEJ3d
-
-first request
-curl https://api.x.ai/v1/chat/completions \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer xai-LvCplRhE8gMA8swwqO6pSFZXT4wxw4VYWHQwz0FcMI92UxSc3pyZk7LebgGtvC5W45mwlzDqXlIbEJ3d" \
-  -d '{
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a test assistant."
-    },
-    {
-      "role": "user",
-      "content": "Testing. Just say hi and hello world and nothing else."
-    }
-  ],
-  "model": "grok-3-mini-beta",
-  "stream": false,
-  "temperature": 0
-}'
-
-
 多分grok単体でもopenai互換ぽそうだから設定できるとは思うんだけど。。。
 https://github.com/yetone/avante.nvim/wiki/Custom-providers
 
 ただ、github copilotでもいける可能性がある
 それなら github copilot + gpt-o4-miniが最強説
+avanteもしくはcopilot.vimがoシリーズにまだ対応してないっぽい
+companionなら行けるっぽいが、一旦avante + grokで行くか
