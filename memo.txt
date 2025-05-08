@@ -189,3 +189,6 @@ companionなら行けるっぽいが、一旦avante + grokで行くか
 https://qiita.com/KokiSakano/items/920222ba401c5f323855
 http://radix-ui.com/themes/playground
 うまく使えそうかな？試す価値ありそう
+
+Amazon Q CLI　もよさそう　自然言語から aws cliコマンドを生成してくれるっぽい
+wslもいけた的な記事があった気がするので、wslで試してみるか
