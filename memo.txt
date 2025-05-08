@@ -184,3 +184,8 @@ https://github.com/yetone/avante.nvim/wiki/Custom-providers
 それなら github copilot + gpt-o4-miniが最強説
 avanteもしくはcopilot.vimがoシリーズにまだ対応してないっぽい
 companionなら行けるっぽいが、一旦avante + grokで行くか
+
+
+https://qiita.com/KokiSakano/items/920222ba401c5f323855
+http://radix-ui.com/themes/playground
+うまく使えそうかな？試す価値ありそう
