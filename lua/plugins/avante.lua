@@ -15,21 +15,6 @@ return {
     --   disable_tools = true,
     --   --reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
     -- },
-    provider = "xai",
-    vendors = {
-      xai = {
-        __inherited_from = "openai",
-        endpoint = "https://api.x.ai/v1",
-        api_key_name = "XAI_API_KEY",
-        model = "grok-3-mini-beta",
-        -- timeout = 60000,
-        -- temperature = 0.0,
-        -- max_completion_tokens = 131072,
-        -- reasoning = {
-        --   effort = "high",
-        -- }
-      },
-    },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
@@ -72,32 +57,44 @@ return {
       ft = { "markdown", "Avante" },
     },
   },
-  -- config = function()
-  --   require("avante").setup({
-  --     disabled_tools = {
-  --       "list_files",
-  --       "search_files",
-  --       "read_file",
-  --       "create_file",
-  --       "rename_file",
-  --       "delete_file",
-  --       "create_dir",
-  --       "rename_dir",
-  --       "delete_dir",
-  --       "bash",
-  --     },
-  --     -- other config
-  --     -- The system_prompt type supports both a string and a function that returns a string. Using a function here allows dynamically updating the prompt with mcphub
-  --     system_prompt = function()
-  --       local hub = require("mcphub").get_hub_instance()
-  --       return hub:get_active_servers_prompt()
-  --     end,
-  --     -- The custom_tools type supports both a list and a function that returns a list. Using a function here prevents requiring mcphub before it's loaded
-  --     custom_tools = function()
-  --       return {
-  --         require("mcphub.extensions.avante").mcp_tool(),
-  --       }
-  --     end,
-  --   }) 
-  -- end,
+  config = function()
+    require("avante").setup({
+      provider = "xai",
+      vendors = {
+        xai = {
+          __inherited_from = "openai",
+          endpoint = "https://api.x.ai/v1",
+          api_key_name = "XAI_API_KEY",
+          model = "grok-3-mini-beta",
+          -- reasoning = {
+          --   effort = "high",
+          -- }
+        },
+      },
+      -- disabled_tools = {
+      --   "list_files",
+      --   "search_files",
+      --   "read_file",
+      --   "create_file",
+      --   "rename_file",
+      --   "delete_file",
+      --   "create_dir",
+      --   "rename_dir",
+      --   "delete_dir",
+      --   "bash",
+      -- },
+      -- other config
+      -- The system_prompt type supports both a string and a function that returns a string. Using a function here allows dynamically updating the prompt with mcphub
+      system_prompt = function()
+        local hub = require("mcphub").get_hub_instance()
+        return hub:get_active_servers_prompt()
+      end,
+      -- The custom_tools type supports both a list and a function that returns a list. Using a function here prevents requiring mcphub before it's loaded
+      custom_tools = function()
+        return {
+          require("mcphub.extensions.avante").mcp_tool(),
+        }
+      end,
+    }) 
+  end,
 }

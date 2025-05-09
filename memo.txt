@@ -192,3 +192,13 @@ http://radix-ui.com/themes/playground
 
 Amazon Q CLI　もよさそう　自然言語から aws cliコマンドを生成してくれるっぽい
 wslもいけた的な記事があった気がするので、wslで試してみるか
+
+
+playwright mcp使えそうな気がするけど、mcp tool をどのように使うかを指定しないといけない
+「
+mcphub.nvim はあくまで Neovim 側で MCP サーバーとの通信チャネルを確立し、MCP ツールを動的にロードできるようにするプラグインです。しかし Avante 側で「どのツールを使うか」「どう呼び出すか」を教えてあげないと、モデルはツールの存在を認識できません。つまり、mcphub.nvim を入れただけでは Avante のチャット設定には自動で反映されません。
+
+したがって、以下のような「custom_tools に Playwright ツールを登録」「system_prompt で呼び出し例を示す」といった設定は、mcphub.nvim を併用していても必須になります。
+」
+
+ただ、スクリーンショットでLLMに投げるからmodelが画像input対応しているものでないと使えないし、使えたとしても高くなりそうなので、ちょっと様子見
