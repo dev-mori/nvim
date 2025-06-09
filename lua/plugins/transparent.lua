@@ -1,13 +1,11 @@
 return {
   "xiyaowong/transparent.nvim",
-  config = function()
-    require("transparent").setup({
-      enable = true,
-      extra_groups = {
-        "NvimTree",
-      },
-      exclude = {},
-    })
-  end,
+  -- config = function()
+  --   require("transparent").setup({
+  --     extra_groups = {
+  --       "NvimTree",
+  --     },
+  --     exclude_groups = {},
+  --   })
+  -- end,
 }
--- :TransparentEnable to enable transparency
