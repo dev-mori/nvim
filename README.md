@@ -30,10 +30,11 @@ sudo apt-get install ripgrep
 ```
 https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
 
-## copilot require 'node'
+## copilot and mason require 'node'
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-nvm install 22
+nvm install --lts  # 最新のLTS版をインストール
+
 ```
 https://nodejs.org/en/download/package-manager
 
@@ -43,6 +44,10 @@ https://nodejs.org/en/download/package-manager
 ```
 
 ## intall lazygit
+```brew
+brew install lazygit
+```
+
 ```
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
