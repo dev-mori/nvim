@@ -60,3 +60,26 @@ https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu
 ```
 brew install im-select
 ```
+
+## setup codex CLI
+https://github.com/openai/codex
+
+### install
+```
+npm install -g @openai/codex
+```
+
+or
+```
+brew install codex
+```
+
+### run & login
+```
+codex
+```
+ChatGPTのアカウントを使って「Sign in with ChatGPT」を選択する。API Keyでの利用方法など詳細は公式ドキュメントを参照。
+
+### docs
+- https://github.com/openai/codex#quickstart
+- https://github.com/openai/codex/blob/main/docs/getting-started.md
