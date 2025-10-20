@@ -14,5 +14,11 @@ return {
       },
       single_file_support = true,
     })
+
+    lspconfig.ts_ls.setup({
+      filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+      root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", ".git"),
+      single_file_support = true,
+    })
   end,
 }
