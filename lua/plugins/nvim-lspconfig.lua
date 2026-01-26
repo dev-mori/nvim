@@ -31,6 +31,15 @@ return {
     })
     vim.lsp.enable("ts_ls")
 
+    -- Python
+    vim.lsp.config("pyright", {
+      filetypes = { "python" },
+      root_markers = { "pyproject.toml", "setup.py", ".git" },
+      single_file_support = true,
+      -- （必要に応じて settings や init_options をここに追加）
+    })
+    vim.lsp.enable("pyright")
+
     -- 参考: 共通キーマップ等は on_attach を直接渡す代わりに LspAttach で
     -- 定義すると既定 on_attach を上書きせずに共存できます（on_attach 自体は非推奨ではありません）
     -- vim.api.nvim_create_autocmd("LspAttach", {
